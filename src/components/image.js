@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import Img from "gatsby-image/withIEPolyfill"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,13 +13,13 @@ import Img from 'gatsby-image'
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-export default ({name}) => {
+export default ({name, className}) => {
   const data = useStaticQuery(graphql`
   {
     allFile(filter: {childImageSharp: {internal: {type: {eq: "ImageSharp"}}}}) {
       nodes {
         childImageSharp {
-          fluid(maxWidth: 300, grayscale: true) {
+          fluid(grayscale: true) {
             ...GatsbyImageSharpFluid
             originalName
           }
@@ -33,5 +33,5 @@ export default ({name}) => {
     return element.childImageSharp.fluid.originalName === name
   });
 
-  return <Img fluid={result.childImageSharp.fluid} />
+  return <Img fluid={result.childImageSharp.fluid} className={className} objectFit="contain"/>
 }

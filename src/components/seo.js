@@ -68,12 +68,6 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-      script={[
-        {
-          src: "https://kit.fontawesome.com/ee7eb4e468.js",
-          crossorigin: "anonymous"
-        }
-      ]}
     />
   )
 }
