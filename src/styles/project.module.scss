@@ -10,7 +10,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // background-color: #8d8d8d;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+
+  &:hover {
+    filter: grayscale(0);
+  }
 }
 
 .text-container {

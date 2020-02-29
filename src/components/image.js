@@ -19,7 +19,7 @@ export default ({name, className}) => {
     allFile(filter: {childImageSharp: {internal: {type: {eq: "ImageSharp"}}}}) {
       nodes {
         childImageSharp {
-          fluid(grayscale: true) {
+          fluid {
             ...GatsbyImageSharpFluid
             originalName
           }
