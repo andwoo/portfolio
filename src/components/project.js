@@ -3,13 +3,16 @@ import { Link } from 'gatsby'
 import Image from './image'
 import styles from '../styles/project.module.scss'
 
-export default ({title, path, image}) => {
+export default ({title, description, path, image}) => {
   return (
-    <div className={styles.container}>
-      <Image name={image}/>
+    <figure>
       <Link className={styles.link} to={path}>
-        {title}
+        <Image name={image}/>
+        <figcaption className={styles.textContainer}>
+          <p className={styles.title}>{title}</p>
+          <p className={styles.description}>{description}</p>
+        </figcaption>
       </Link>
-    </div>
+    </figure>
   )
 }

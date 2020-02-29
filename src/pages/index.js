@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import AbountMe from '../components/aboutme'
 import Project from '../components/project'
 // import styles from '../styles/index.module.scss'
 
@@ -9,6 +10,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout title="Portfolio">
+      <AbountMe />
       <div className="columns is-multiline">
         {allMarkdownRemark.edges.map((data, index) => {
           return (
@@ -32,6 +34,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
+            description
             path
             image
           }

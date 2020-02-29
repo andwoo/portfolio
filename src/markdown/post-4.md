@@ -2,6 +2,7 @@
 path: '/blog/my-fourth-post'
 date: '2019-07-04'
 title: 'My fourth blog post'
+description: 'some desc text'
 type: 'project'
 image: 'gatsby-astronaut.png'
 ---

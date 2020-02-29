@@ -5,15 +5,11 @@ import styles from '../styles/layout.module.scss'
 
 const Layout = ({ title, children }) => {
   return (
-    <div className={styles.layout}>
+    <div className={styles.container}>
       <Header/>
         <SEO title={title} />
-        <main className={styles.content}>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <main>{children}</main>
+        <footer></footer>
     </div>
   )
 }

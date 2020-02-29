@@ -16,7 +16,7 @@ export default ()  => {
   `);
 
   return (
-    <header className={styles.header} >
+    <header className={styles.container} >
         <div className="columns is-gapless is-mobile is-vcentered">
           <div className="column">
             <Link className={styles.title} to="/">{data.site.siteMetadata.headerTitle}</Link>
