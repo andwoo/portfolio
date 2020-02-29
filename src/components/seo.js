@@ -32,8 +32,8 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={site.siteMetadata.title}
+      titleTemplate={`%s | ${title}`}
       meta={[
         {
           name: `description`,
@@ -68,6 +68,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
+      script={[
+        {
+          src: "https://kit.fontawesome.com/ee7eb4e468.js",
+          crossorigin: "anonymous"
+        }
+      ]}
     />
   )
 }
