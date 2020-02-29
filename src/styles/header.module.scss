@@ -16,25 +16,15 @@ $phone: 564px;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.2;
-  color: rgb(117, 117, 117);
-  transition: color 0.2s ease 0s;
-  text-decoration: none;
 }
 
 .link {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.2;
-  color: rgb(117, 117, 117);
-  transition: color 0.2s ease 0s;
-  text-decoration: none;
 }
 
 .spacer {
   display: inline-block;
   width: 1rem;
-
-  @include until ($phone) {
-    display: block;
-  }
 }

@@ -21,7 +21,7 @@ export default ()  => {
           <div className="column">
             <Link className={styles.title} to="/">{data.site.siteMetadata.headerTitle}</Link>
           </div>
-          <div className="column is-4 has-text-right is-vcentered is-uppercase">
+          <div className="column has-text-right is-vcentered is-uppercase">
             <a className={styles.link} href={data.site.siteMetadata.github}>Github</a>
             <span className={styles.spacer}></span>
             <a className={styles.link} href={data.site.siteMetadata.linkedIn}>LinkedIn</a>

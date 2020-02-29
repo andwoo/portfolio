@@ -1,32 +1,24 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Image from '../components/image'
-import SEO from '../components/seo'
-import styles from './index.module.scss'
+import Project from '../components/project'
+// import styles from '../styles/index.module.scss'
 
 const IndexPage = ({ data }) => {
   const { allMarkdownRemark } = data
 
   return (
-    <Layout>
-      <SEO title="Portfolio" />
-      <h1 className={styles.title}>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <div className={styles.imageContainer}>
-        <Image />
+    <Layout title="Portfolio">
+      <div className="columns is-multiline">
+        {allMarkdownRemark.edges.map((data, index) => {
+          return (
+            <div key={index} className="column is-one-third">
+              <Project {...data.node.frontmatter}/>
+            </div>
+            )
+          }
+        )}
       </div>
-      {allMarkdownRemark.edges.map((data, index) => {
-        return (
-          <div key={index}>
-            <Link to={data.node.frontmatter.path}>
-              {data.node.frontmatter.title}
-            </Link>
-          </div>
-        )
-      })}
     </Layout>
   )
 }
@@ -41,6 +33,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
+            image
           }
         }
       }

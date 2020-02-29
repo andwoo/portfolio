@@ -3,16 +3,17 @@ path: '/blog/my-first-post'
 date: '2019-05-04'
 title: 'My first blog post'
 type: 'project'
+image: 'gatsby-astronaut.png'
 ---
 
 ## What it do baby
 
-### Smaller subtitle beeeetch
+### Smaller subtitle
 
 how about some more text
 
 ```csharp
-code snippet bitch
+code snippet
 ```
 
 [Home](/)

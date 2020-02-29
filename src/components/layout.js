@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from './header'
+import SEO from './seo'
 import styles from '../styles/layout.module.scss'
 
-const Layout = ({ children }) => {
+const Layout = ({ title, children }) => {
   return (
     <div className={styles.layout}>
       <Header/>
+        <SEO title={title} />
         <main className={styles.content}>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

@@ -1,7 +1,7 @@
 ---
-path: '/blog/my-second-post'
-date: '2019-05-04'
-title: 'My second blog post'
+path: '/blog/my-fourth-post'
+date: '2019-07-04'
+title: 'My fourth blog post'
 type: 'project'
 image: 'gatsby-astronaut.png'
 ---
