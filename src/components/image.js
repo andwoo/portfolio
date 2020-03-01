@@ -33,5 +33,5 @@ export default ({name, className}) => {
     return element.childImageSharp.fluid.originalName === name
   });
 
-  return <Img fluid={result.childImageSharp.fluid} className={className} objectFit="contain"/>
+  return <Img fluid={result.childImageSharp.fluid} className={className} objectFit="cover"/>
 }

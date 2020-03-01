@@ -4,7 +4,7 @@ date: '2019-01-02'
 title: 'Apples to Apples'
 description: 'Description text.'
 type: 'project'
-image: 'a2a.png'
-backgroundColor: '#f1f1f1'
+image: 'applestoapples.jpg'
+backgroundColor: '#000000'
 ---
 
