@@ -21,11 +21,21 @@ const Layout = ({ title, titleContent, children }) => {
 
   return (
     <div className={styles.container}>
-      <Header {...data.site.siteMetadata} />
       <SEO title={title} />
-      <TitleContent titleContent={titleContent} />
-      <main className={styles.main}>{children}</main>
-      <Footer {...data.site.siteMetadata} />
+      <div className="columns is-gapless is-mobile is-multiline">
+        <div className="column is-full">
+          <Header {...data.site.siteMetadata} />
+        </div>
+        <div className="column is-full">
+          <TitleContent titleContent={titleContent} />
+        </div>
+        <div className="column is-full">
+          <main>{children}</main>
+        </div>
+        <div className="column is-full">
+          <Footer {...data.site.siteMetadata} />
+        </div>
+      </div>
     </div>
   );
 };
