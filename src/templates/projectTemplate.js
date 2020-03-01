@@ -1,23 +1,20 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import styles from '../styles/projectTemplate.module.scss'
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
+import styles from '../styles/projectTemplate.module.scss';
 
-export default ({
-  data
-}) => {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+export default ({ data }) => {
+  const { markdownRemark } = data;
+  const { frontmatter, html } = markdownRemark;
   return (
-    <Layout title={frontmatter.title} titleContent={frontmatter.title}>
-      <h2>{frontmatter.date}</h2>
+    <Layout title={frontmatter.headerTitle} titleContent={frontmatter.title}>
       <div
         className={styles.container}
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </Layout>
-  )
-}
+  );
+};
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -27,7 +24,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        headerTitle
       }
     }
   }
-`
+`;

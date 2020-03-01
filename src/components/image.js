@@ -1,6 +1,6 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import Img from "gatsby-image/withIEPolyfill"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image/withIEPolyfill';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,25 +13,35 @@ import Img from "gatsby-image/withIEPolyfill"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-export default ({name, className}) => {
+export default ({ name, className }) => {
   const data = useStaticQuery(graphql`
-  {
-    allFile(filter: {childImageSharp: {internal: {type: {eq: "ImageSharp"}}}}) {
-      nodes {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-            originalName
+    {
+      allFile(
+        filter: {
+          childImageSharp: { internal: { type: { eq: "ImageSharp" } } }
+        }
+      ) {
+        nodes {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+              originalName
+            }
           }
         }
       }
     }
-  }  
-  `)
+  `);
 
   const result = data.allFile.nodes.find(element => {
-    return element.childImageSharp.fluid.originalName === name
+    return element.childImageSharp.fluid.originalName === name;
   });
 
-  return <Img fluid={result.childImageSharp.fluid} className={className} objectFit="cover"/>
-}
+  return (
+    <Img
+      fluid={result.childImageSharp.fluid}
+      className={className}
+      objectFit="cover"
+    />
+  );
+};

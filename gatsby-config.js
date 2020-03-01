@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Andrew Manley`,
+    title: `Portfolio`,
     headerTitle: `Andrew Manley`,
     description: `The portfolio of Ottawa based developer Andrew Manley.`,
     author: `Andrew Manley`,
     github: `https://github.com/andwoo`,
-    linkedIn: `https://linkedin.com/in/andrewmanley/`
+    linkedIn: `https://linkedin.com/in/andrewmanley/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,7 +31,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               grayscale: true,
-              wrapperStyle: 'width:500px;height:500px'
+              wrapperStyle: 'width:500px;height:500px',
             },
           },
         ],
@@ -57,4 +57,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

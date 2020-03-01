@@ -1,28 +1,27 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Project from '../components/project'
-// import styles from '../styles/index.module.scss'
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
+import Project from '../components/project';
 
 const IndexPage = ({ data }) => {
-  const { allMarkdownRemark } = data
-  const titleContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.';
+  const { allMarkdownRemark } = data;
+  const titleContent =
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.';
 
   return (
-    <Layout title="Portfolio" titleContent={titleContent}>
+    <Layout title="Andrew Manley" titleContent={titleContent}>
       <div className="columns is-multiline">
         {allMarkdownRemark.edges.map((data, index) => {
           return (
             <div key={index} className="column is-one-third">
-              <Project {...data.node.frontmatter}/>
+              <Project {...data.node.frontmatter} />
             </div>
-            )
-          }
-        )}
+          );
+        })}
       </div>
     </Layout>
-  )
-}
+  );
+};
 export const pageQuery = graphql`
   {
     allMarkdownRemark(
@@ -42,5 +41,5 @@ export const pageQuery = graphql`
       }
     }
   }
-`
-export default IndexPage
+`;
+export default IndexPage;

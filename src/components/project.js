@@ -1,14 +1,17 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Image from './image'
-import styles from '../styles/project.module.scss'
+import React from 'react';
+import { Link } from 'gatsby';
+import Image from './image';
+import styles from '../styles/project.module.scss';
 
-export default ({title, description, path, image, backgroundColor}) => {
+export default ({ title, description, path, image, backgroundColor }) => {
   return (
     <figure>
       <Link to={path}>
-        <div className={styles.imageContainer} style={{backgroundColor: backgroundColor}}>
-          <Image className={styles.image} name={image}/>
+        <div
+          className={styles.imageContainer}
+          style={{ backgroundColor: backgroundColor }}
+        >
+          <Image className={styles.image} name={image} />
         </div>
         <figcaption className={styles.textContainer}>
           <p className={styles.title}>{title}</p>
@@ -16,5 +19,5 @@ export default ({title, description, path, image, backgroundColor}) => {
         </figcaption>
       </Link>
     </figure>
-  )
-}
+  );
+};

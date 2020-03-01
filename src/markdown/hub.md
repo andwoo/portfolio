@@ -2,6 +2,7 @@
 path: '/hub'
 date: '2019-01-08'
 title: 'Hub Chrome Extension'
+headerTitle: 'Hub'
 description: 'Description text.'
 type: 'project'
 image: 'hub.png'
