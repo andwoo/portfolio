@@ -1,6 +1,6 @@
 ---
 path: '/hub'
-date: '2019-01-08'
+date: '2019-01-09'
 title: 'Hub Chrome Extension'
 headerTitle: 'Hub'
 description: 'Description text.'

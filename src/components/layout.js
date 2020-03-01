@@ -24,7 +24,7 @@ const Layout = ({ title, titleContent, children }) => {
       <Header {...data.site.siteMetadata} />
       <SEO title={title} />
       <TitleContent titleContent={titleContent} />
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
       <Footer {...data.site.siteMetadata} />
     </div>
   );

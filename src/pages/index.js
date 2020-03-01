@@ -5,8 +5,7 @@ import Project from '../components/project';
 
 const IndexPage = ({ data }) => {
   const { allMarkdownRemark } = data;
-  const titleContent =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.';
+  const titleContent = `I'm an Ottawa based developer with a background in game, mobile and web development. Always striving to be the best I can be; my passion is to continuously learn and deliver quality code.`;
 
   return (
     <Layout title="Andrew Manley" titleContent={titleContent}>

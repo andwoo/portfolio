@@ -6,9 +6,9 @@ import styles from '../styles/footer.module.scss';
 export default ({ github, linkedIn }) => {
   return (
     <footer className={styles.container}>
-      <div className="columns is-gapless is-vcentered">
+      <div className="columns is-gapless is-mobile is-vcentered">
         <div className="column">
-          <h3>
+          <h3 className={styles.title}>
             I like{' '}
             <span role="img" aria-label="coffee">
               ☕
