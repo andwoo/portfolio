@@ -1,6 +1,16 @@
 .container {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
-  
-  // background-color: blueviolet;
+  height: 100vh;
+}
+
+.columns {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: inherit;
+}
+
+.column-stretch {
+  flex-grow: 1;
 }

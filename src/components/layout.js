@@ -22,19 +22,12 @@ const Layout = ({ title, titleContent, children }) => {
   return (
     <div className={styles.container}>
       <SEO title={title} />
-      <div className="columns is-gapless is-mobile is-multiline">
-        <div className="column is-full">
-          <Header {...data.site.siteMetadata} />
-        </div>
-        <div className="column is-full">
-          <TitleContent titleContent={titleContent} />
-        </div>
-        <div className="column is-full">
-          <main>{children}</main>
-        </div>
-        <div className="column is-full">
-          <Footer {...data.site.siteMetadata} />
-        </div>
+      <div className={styles.columns}>
+        <Header {...data.site.siteMetadata} />
+        <TitleContent titleContent={titleContent} />
+        <main>{children}</main>
+        <div className={styles.columnStretch} />
+        <Footer {...data.site.siteMetadata} />
       </div>
     </div>
   );
