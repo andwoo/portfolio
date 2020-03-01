@@ -8,3 +8,4 @@ image: 'hub.png'
 backgroundColor: '#000000'
 ---
 
+![](../images/hub.png)

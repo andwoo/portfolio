@@ -1,16 +1,15 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import AbountMe from '../components/aboutme'
 import Project from '../components/project'
 // import styles from '../styles/index.module.scss'
 
 const IndexPage = ({ data }) => {
   const { allMarkdownRemark } = data
+  const titleContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.';
 
   return (
-    <Layout title="Portfolio">
-      <AbountMe />
+    <Layout title="Portfolio" titleContent={titleContent}>
       <div className="columns is-multiline">
         {allMarkdownRemark.edges.map((data, index) => {
           return (
