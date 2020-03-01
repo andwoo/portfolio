@@ -1,5 +1,5 @@
 import React from 'react';
-// import { useStaticQuery, graphql, Link } from 'gatsby'
+import { ColorLinkA } from './colorlink';
 import headerStyles from '../styles/header.module.scss';
 import styles from '../styles/footer.module.scss';
 
@@ -20,13 +20,9 @@ export default ({ github, linkedIn }) => {
           </h3>
         </div>
         <div className="column has-text-right is-vcentered is-uppercase">
-          <a className={headerStyles.link} href={github}>
-            Github
-          </a>
+          <ColorLinkA className={headerStyles.link} to={github} color="#757575">Github</ColorLinkA>
           <span className={headerStyles.spacer}></span>
-          <a className={headerStyles.link} href={linkedIn}>
-            LinkedIn
-          </a>
+          <ColorLinkA className={headerStyles.link} to={linkedIn} color="#757575">LinkedIn</ColorLinkA>
         </div>
       </div>
     </footer>
