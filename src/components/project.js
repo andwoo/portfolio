@@ -26,7 +26,6 @@ export default class Project extends React.PureComponent{
 
   render() {
     const { title, description, path, image, backgroundColor } = this.props;
-    console.log(this.link.current ? this.link.current.getHoverStyle() : 'nothing');
     return (
       <figure>
         <ColorLink to={path} ref={this.link} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} color="#000000">

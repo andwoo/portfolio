@@ -40,7 +40,6 @@ class ColorChange extends React.PureComponent {
   }
   
   getHoverStyle = () => {
-    // console.log(this.state.color);
     return { color: this.state.color };
   }
 }
