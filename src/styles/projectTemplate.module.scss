@@ -1,3 +1,43 @@
+@import "bulma/sass/utilities/_all.sass";
+@import "variables";
+
 .container {
-  // background-color: green;
+  @include until($tablet) {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}
+
+.content {
+}
+
+.side {
+  padding-bottom: 1.2rem;
+}
+
+.icon {
+  font-size: 1.7rem;
+  padding-right: 0.5rem;
+}
+
+.repo-item {
+  color: inherit;
+  font-size: 1.2rem;
+  font-family: monospace;
+  padding: 0.5rem;
+  border-color: inherit;
+  border: 1px solid;
+  border-bottom: 2px solid;
+}
+
+.line {
+  border-top: 1px solid $colour-grey;
+}
+
+.technology-Item {
+  background-color: $colour-black;
+  color: $colour-white;
+  font-size: 1.2rem;
+  font-family: monospace;
+  padding: 0.5rem;
 }

@@ -8,8 +8,6 @@ const COLORS = [
   "#548ddb",
 ];
 
-
-
 var COLOR_INDEX = 0;
 
 class ColorChange extends React.PureComponent {

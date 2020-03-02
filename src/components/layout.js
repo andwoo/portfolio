@@ -6,7 +6,7 @@ import TitleContent from './title';
 import Footer from './footer';
 import styles from '../styles/layout.module.scss';
 
-const Layout = ({ title, titleContent, children }) => {
+const Layout = ({ title, titleContent, fontawesome, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -21,7 +21,7 @@ const Layout = ({ title, titleContent, children }) => {
 
   return (
     <div className={styles.container}>
-      <SEO title={title} />
+      <SEO title={title} fontawesome={fontawesome} />
       <div className={styles.columns}>
         <Header {...data.site.siteMetadata} />
         <TitleContent titleContent={titleContent} />

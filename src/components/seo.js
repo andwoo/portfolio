@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, fontawesome }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -26,6 +26,13 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const scripts = [];
+  if(fontawesome) {
+    scripts.push({
+      src: 'https://kit.fontawesome.com/ee7eb4e468.js',
+      crossorigin: 'anonymous'
+    });
+  }
 
   return (
     <Helmet
@@ -68,6 +75,7 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
+      script={scripts}
     />
   );
 }
