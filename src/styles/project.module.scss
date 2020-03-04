@@ -1,5 +1,12 @@
 @import "variables";
 
+.container {
+  border-color: inherit;
+  border: 1px solid;
+  border-bottom: 2px solid;
+  padding: 1rem;
+}
+
 .image-container {
   height: 250px;
   width: auto;
@@ -22,7 +29,8 @@
 }
 
 .text-container {
-  padding: 1rem;
+  // padding-left: 1rem;
+  padding-top: 0.5rem;
 }
 
 .title {

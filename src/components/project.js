@@ -29,16 +29,18 @@ export default class Project extends React.PureComponent{
     return (
       <figure>
         <ColorLink to={path} ref={this.link} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} color="#000000">
-          <div
-            className={styles.imageContainer}
-            style={{ backgroundColor: backgroundColor }}
-          >
-            <Image className={styles.image} name={image} />
+          <div className={styles.container}>
+            <div
+              className={styles.imageContainer}
+              style={{ backgroundColor: backgroundColor }}
+            >
+              <Image className={styles.image} name={image} />
+            </div>
+            <figcaption className={styles.textContainer}>
+              <p className={styles.title} style={this.getHoverStyle("#000000")}>{title}</p>
+              <p className={styles.description} style={this.getHoverStyle("#757575")}>{description}</p>
+            </figcaption>
           </div>
-          <figcaption className={styles.textContainer}>
-            <p className={styles.title} style={this.getHoverStyle("#000000")}>{title}</p>
-            <p className={styles.description} style={this.getHoverStyle("#757575")}>{description}</p>
-          </figcaption>
         </ColorLink>
       </figure>
     );
