@@ -12,7 +12,13 @@
 }
 
 .side {
-  padding-bottom: 1.2rem;
+  padding-top: 1.1rem;
+  
+  @include until($tablet) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.2rem;
+  }
 }
 
 .icon {
