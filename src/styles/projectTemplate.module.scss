@@ -9,6 +9,18 @@
 }
 
 .content {
+  a {
+    color: $colour-black;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
+
+pre {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-color: $colour-black;
+  border-left: 2px solid;
 }
 
 .side {

@@ -7,4 +7,5 @@ description: 'A 360° media based social network.'
 type: 'project'
 image: 'vicariousvr.jpg'
 backgroundColor: '#000000'
+technologies: ['Unity', 'C#', 'Objective C', 'Java', 'FFMPEG', 'VR']
 ---

@@ -7,4 +7,5 @@ description: 'Kids learning app on iOS and Android.'
 type: 'project'
 image: 'sagominiworld.png'
 backgroundColor: '#000000'
+technologies: ['Unity', 'C#', 'Objective C', 'Java', 'AR KIT']
 ---
