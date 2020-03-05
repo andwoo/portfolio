@@ -11,7 +11,7 @@ repos: ['https://github.com/andwoo/template-vanilla-scss', 'https://github.com/a
 technologies: ['React', 'Redux', 'SCSS', 'Typescript', 'C#', 'ASP.NET Core', 'Docker']
 ---
 
-![](../images/webtemplates.jpg)
+![Web Templates](../images/webtemplates.jpg)
 ## Some subtitle
 some text here
 

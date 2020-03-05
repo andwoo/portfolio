@@ -24,9 +24,6 @@ I always think fondly of this project because I've learnt so much and became a b
 
 ---
 
-</br>
-</br>
-
 ![Rubik's Uncubed](../images/rubiks-0.jpg)
 
 </br>
