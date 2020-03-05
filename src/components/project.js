@@ -25,7 +25,7 @@ export default class Project extends React.PureComponent{
   }
 
   render() {
-    const { title, description, path, image, backgroundColor } = this.props;
+    const { title, description, path, main, backgroundColor } = this.props;
     return (
       <figure>
         <ColorLink to={path} ref={this.link} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} color="#000000">
@@ -34,7 +34,7 @@ export default class Project extends React.PureComponent{
               className={styles.imageContainer}
               style={{ backgroundColor: backgroundColor }}
             >
-              <Image className={styles.image} name={image} />
+              <Image className={styles.image} name={main} objectFit="cover" />
             </div>
             <figcaption className={styles.textContainer}>
               <p className={styles.title} style={this.getHoverStyle("#000000")}>{title}</p>

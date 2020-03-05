@@ -5,13 +5,12 @@ title: 'Web Templates'
 headerTitle: 'Web Templates'
 description: 'Collection of template starter projects for web.'
 type: 'project'
-image: 'webtemplates.jpg'
+logo: 'webtemplates/main.jpg'
+main: 'webtemplates/main.jpg'
 backgroundColor: '#000000'
 repos: ['https://github.com/andwoo/template-vanilla-scss', 'https://github.com/andwoo/template-react-scss', 'https://github.com/andwoo/template-react-redux-scss', 'https://github.com/andwoo/template-react-redux-scss-asp']
 technologies: ['React', 'Redux', 'SCSS', 'Typescript', 'C#', 'ASP.NET Core', 'Docker']
 ---
-
-![Web Templates](../images/webtemplates.jpg)
 
 I created a collection of template repositories to quickly get my ideas off the ground. My biggest hurdle when starting a new personal web project is the repetitive start up boilerplate. Doing the same thing over and over got tiring and occasionally I would give up on an idea because of the set up time it takes to configure a modern web project. Yes starter projects exist out there but with so many dependencies I sometimes couldn't tell what their use was. These starters tried to cast a wide net to cover many project types which isn't a bad thing but I wanted something minimalist. 
 

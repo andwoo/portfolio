@@ -13,7 +13,7 @@ import Img from 'gatsby-image/withIEPolyfill';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-export default ({ name, className }) => {
+export default ({ name, className, objectFit }) => {
   const data = useStaticQuery(graphql`
     {
       allFile(
@@ -28,20 +28,30 @@ export default ({ name, className }) => {
               originalName
             }
           }
+          relativePath
         }
       }
     }
   `);
 
   const result = data.allFile.nodes.find(element => {
-    return element.childImageSharp.fluid.originalName === name;
+    // console.log(name);
+    // console.dir(element);
+    // if(element.relativePath !== name) {
+    //   console.log(`${element.relativePath} == ${name}`);
+    // }
+    return element.relativePath === name;
   });
+  if(!result) {
+    console.log(name);
+  }
+  // console.dir(result);
 
   return (
     <Img
       fluid={result.childImageSharp.fluid}
       className={className}
-      objectFit="cover"
+      objectFit={objectFit}
     />
   );
 };

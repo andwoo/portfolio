@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import { ColorLinkA } from '../components/colorlink';
 import styles from '../styles/projectTemplate.module.scss';
+import Image from '../components/image';
 
 export default class Project extends React.PureComponent {
   RenderRepo = ({data}) => {
@@ -39,6 +40,9 @@ export default class Project extends React.PureComponent {
     <Layout title={frontmatter.headerTitle} titleContent={frontmatter.title} fontawesome={true}>
       <div className={`columns ${styles.container}`}>
         <div className={`column ${styles.content}`}>
+          <div className={styles.headerImageContainer}>
+            <Image className={styles.headerImage} name={frontmatter.logo} objectFit="contain" />
+          </div>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
         <div className={`column is-one-quarter ${styles.side}`}>
@@ -63,6 +67,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        logo
         path
         title
         headerTitle

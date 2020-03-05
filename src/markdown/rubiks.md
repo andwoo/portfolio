@@ -5,12 +5,11 @@ title: "Rubik's Uncubed"
 headerTitle: "Rubik's"
 description: "Match 3 game for the popular Rubik's Cube brand."
 type: 'project'
-image: 'rubiksuncubed.jpg'
+logo: 'rubiks/logo.png'
+main: 'rubiks/main.jpg'
 backgroundColor: '#000000'
 technologies: ['Unity', 'C#']
 ---
-
-![Rubik's Uncubed](../images/rubiks.png)
 
 A match 3 game where gameplay involves meeting objectives by matching tiles in different formations. My contributions to the project were the following:
 ```
@@ -24,16 +23,16 @@ I always think fondly of this project because I've learnt so much and became a b
 
 ---
 
-![Rubik's Uncubed](../images/rubiks-0.jpg)
+![Rubik's Uncubed](../images/rubiks/rubiks-0.jpg)
 
 </br>
 
-![Rubik's Uncubed](../images/rubiks-1.jpg)
+![Rubik's Uncubed](../images/rubiks/rubiks-1.jpg)
 
 </br>
 
-![Rubik's Uncubed](../images/rubiks-2.jpg)
+![Rubik's Uncubed](../images/rubiks/rubiks-2.jpg)
 
 </br>
 
-![Rubik's Uncubed](../images/rubiks-3.jpg)
+![Rubik's Uncubed](../images/rubiks/rubiks-3.jpg)

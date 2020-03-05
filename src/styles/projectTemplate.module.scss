@@ -8,6 +8,18 @@
   }
 }
 
+.header-image-container {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
+  background-color: $colour-black;
+}
+
+.header-image {
+  height: 100%;
+  width: auto;
+}
+
 .content {
   a {
     color: $colour-black;
@@ -24,7 +36,7 @@ pre {
 }
 
 .side {
-  padding-top: 1.1rem;
+  padding-top: 1.8rem;
   
   @include until($tablet) {
     padding-left: 1.5rem;

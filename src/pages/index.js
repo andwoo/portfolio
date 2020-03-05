@@ -33,7 +33,7 @@ export const pageQuery = graphql`
             title
             description
             path
-            image
+            main
             backgroundColor
           }
         }
