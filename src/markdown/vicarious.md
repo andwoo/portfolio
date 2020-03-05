@@ -1,6 +1,6 @@
 ---
 path: '/vicarious'
-date: '2019-01-04'
+date: '2017-05-01'
 title: 'Vicarious VR'
 headerTitle: 'Vicarious'
 description: 'A 360° media based social network.'

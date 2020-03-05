@@ -1,6 +1,6 @@
 ---
 path: '/sago'
-date: '2018-09-17'
+date: '2018-01-01'
 title: 'Sago Mini World'
 headerTitle: 'Sago Mini'
 description: 'Kids learning app on iOS and Android.'
@@ -14,7 +14,7 @@ technologies: ['Unity', 'C#', 'Objective C', 'Java', 'AR KIT']
 
 During my time at Karman Interactive I worked with the Toronto based kids learning company [Sago Mini](https://sagomini.com/en/). My primary role was to augment their existing Unity team working on [Sago Mini World](https://sagomini.com/en/sagominiworld/). The application acts as a hub for all their standalone games along with user session management and subscription purchasing. I was eventually tasked with creating a new game to add to Sago Mini World titled Magic Camera with the end goal of adding augmented reality capabilities to their physical playset toy [Jinja's House](https://sagomini.com/en/toys/detail/portable-playset-jinja-s-house/).
 
----
+</br>
 
 ## Magic Camera
 
