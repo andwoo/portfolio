@@ -9,14 +9,7 @@ export default ({ github, linkedIn }) => {
       <div className="columns is-gapless is-mobile is-vcentered">
         <div className="column">
           <h3 className={styles.title}>
-            I like{' '}
-            <span role="img" aria-label="coffee">
-              ☕
-            </span>{' '}
-            and{' '}
-            <span role="img" aria-label="pizza">
-              🍕
-            </span>
+            <span role="img" aria-label="coffee">☕</span>
           </h3>
         </div>
         <div className="column has-text-right is-vcentered is-uppercase">
