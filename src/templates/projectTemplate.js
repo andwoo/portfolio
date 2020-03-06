@@ -50,7 +50,7 @@ export default class Project extends React.PureComponent {
             <div className="columns is-multiline is-mobile">
               {frontmatter.technologies && frontmatter.technologies.map((data, index) => <this.RenderTechnology key={index} data={data}/>)}
             </div>
-            {frontmatter.repos && <div className={`column is-full ${styles.line}`}/>}
+            <div className={`column is-full ${styles.line}`}/>
             <div className="columns is-multiline is-mobile">
               {frontmatter.repos && frontmatter.repos.map((data, index) => <this.RenderRepo key={index} data={data}/>)}
             </div>

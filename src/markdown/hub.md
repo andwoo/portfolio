@@ -12,7 +12,7 @@ repos: ['https://github.com/andwoo/browser-extension-homescreen']
 technologies: ['React', 'Redux', 'SCSS', 'Typescript']
 ---
 
-Every time I launch my browser, I open several new tabs to catch up on what's new on my favourite sites. I decided to make a Google Chrome extension to showcase all the information I wanted to see on one page. The page contains a list of quick launch icons, followed live Twitch streamers, favourite subreddits and upcoming esports matches. [Extension Page](https://chrome.google.com/webstore/detail/hub/fmbiminakmgaaglnogaemeighbdoolmi)
+Every time I launch my browser, I open several tabs to catch up on what's new on my favourite sites. I decided to make a Google Chrome extension to showcase all the information I wanted to see on one page. The page contains a list of quick launch icons, followed live Twitch streamers, favourite subreddits and upcoming esports matches. [Extension Page](https://chrome.google.com/webstore/detail/hub/fmbiminakmgaaglnogaemeighbdoolmi)
 
 ---
 

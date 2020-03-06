@@ -19,7 +19,7 @@ A match 3 game where gameplay involves meeting objectives by matching tiles in d
 • Leaderboards.
 • Content download system.
 ```
-I always think fondly of this project because I've learnt so much and became a better developer by working in different layers of the app. [Trailer](https://www.facebook.com/RubiksUncubed/videos/1521018274865629/)
+[Trailer](https://www.facebook.com/RubiksUncubed/videos/1521018274865629/)
 
 ---
 
