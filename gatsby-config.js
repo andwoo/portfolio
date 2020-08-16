@@ -31,7 +31,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               // grayscale: true,
-              wrapperStyle: 'max-width:100%;max-height:100%;',
+              wrapperStyle: fluidResult => `flex:${fluidResult.aspectRatio << 0};`
             },
           },
           {
